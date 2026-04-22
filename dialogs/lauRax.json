@@ -1,0 +1,146 @@
+[
+	{
+		"text" : "Salut",
+		"choices": [
+			{
+				"text": "On a pas envoyé le TP !!",
+				"requirements": [
+					{
+						"name": "infoMail",
+						"value": true
+					}
+				],
+				"impacts": [
+					{ 
+						"name": "infoEnvoi",
+					 	"value": true
+					}
+				]
+			},
+			{
+				"text": "Salut",
+				"requirements": [ ],
+				"impacts": []
+			}
+		],
+		"requirements": [
+			{ 
+				"name": "mailEnvoye",
+			 	"value": false 
+			},
+			{ 
+				"name": "infoEnvoi",
+			 	"value": false 
+			}
+		]
+	},
+	{
+		"text" : "Je l'envoie tout de suite",
+		"choices": [
+			{
+				"text": "Ok.",
+				"requirements": [ ],
+				"impacts": [
+					{ 
+						"name": "archiveComplete",
+					 	"value": false
+					},
+					{ 
+						"name": "mailEnvoye",
+					 	"value": true
+					}
+				]
+			},
+			{
+				"text": "Oublie pas de checker l'archive.",
+				"requirements": [ ],
+				"impacts": [
+					{ 
+						"name": "archiveComplete",
+					 	"value": true
+					},
+					{ 
+						"name": "mailEnvoye",
+					 	"value": true
+					}
+				]
+			}
+		],
+		"requirements": [
+			{ 
+				"name": "mailEnvoye",
+			 	"value": false 
+			},
+			{ 
+				"name": "infoEnvoi",
+			 	"value": true 
+			}
+		]
+	},
+	{
+		"text" : "Y a un problème ?",
+		"choices": [
+			{
+				"text": "L'archive est vide...",
+				"requirements": [ ],
+				"impacts": [
+					{ 
+						"name": "infoArchive",
+					 	"value": true
+					}
+				]
+			}
+		],
+		"requirements": [
+			{ 
+				"name": "mailEnvoye",
+			 	"value": true
+			},
+			{ 
+				"name": "demandeCorrection",
+			 	"value": true 
+			},
+			{ 
+				"name": "archiveComplete",
+			 	"value": false
+			},
+			{ 
+				"name": "infoArchive",
+			 	"value": false
+			}
+		]
+	},
+	{
+		"text" : "Ok, j'envoie une la bonne.",
+		"choices": [
+			{
+				"text": "merci !",
+				"requirements": [ ],
+				"impacts": [
+					{ 
+						"name": "archiveComplete",
+					 	"value": true
+					},
+				]
+			}
+		],
+		"requirements": [
+			{ 
+				"name": "mailEnvoye",
+			 	"value": true
+			},
+			{ 
+				"name": "demandeCorrection",
+			 	"value": true 
+			},
+			{ 
+				"name": "archiveComplete",
+			 	"value": false
+			},
+			{ 
+				"name": "infoArchive",
+			 	"value": true
+			}
+		]
+	}
+]
