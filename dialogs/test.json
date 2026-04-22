@@ -1,0 +1,36 @@
+{
+	"dialogs": {
+		"Bonjour" : [
+			{
+				"text": "Au revoir.",
+				"requirements": [
+					{ 
+						"name": "start",
+					 	"value": true 
+					}
+				],
+				"impacts": [
+					{
+						"name": "say hello",
+						"value": false
+					}
+				],
+				"nextDialog": "A plus"
+			}
+		],
+		"A plus": [
+			{
+				"text": "Ok...",
+				"requirements": [
+					{ 
+						"name": "say hello",
+					 	"value": false 
+					}
+				],
+				"impacts": [],
+				"nextDialog": null
+			}
+		]
+	},
+	"starting_dialog": "Bonjour"
+}
