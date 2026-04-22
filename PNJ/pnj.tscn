@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://rclml3fsdfc0"]
+
+[ext_resource type="Script" uid="uid://h5r2xpqr5ry1" path="res://PNJ/pnj.gd" id="1_b4g5s"]
+[ext_resource type="Texture2D" uid="uid://bkimtpalw7k2t" path="res://assets/test.png" id="2_7ovff"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cpxlu"]
+size = Vector2(64, 64)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cpxlu"]
+radius = 20.0
+
+[node name="PNJ" type="CharacterBody2D" unique_id=1743636508]
+script = ExtResource("1_b4g5s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=703648713]
+texture = ExtResource("2_7ovff")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1738816754]
+shape = SubResource("RectangleShape2D_cpxlu")
+
+[node name="DetectionZone" type="Area2D" parent="." unique_id=1941393810]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionZone" unique_id=678099176]
+shape = SubResource("CircleShape2D_cpxlu")
+
+[node name="Label" type="Label" parent="." unique_id=1970210963]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "[E] Parler"
