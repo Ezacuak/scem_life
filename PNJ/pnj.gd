@@ -37,11 +37,11 @@ func _on_player_exited(body):
 		player_nearby = false
 		label.hide()
 		# Ferme la boîte de dialogue si ouverte
-		DialogManager.close_dialog()
+		DialogBoxManager.close_dialog()
 
 func interact():
 	var line = dialogues[dialogue_index]
-	DialogManager.show_dialog(npc_name, line)
+	DialogBoxManager.show_dialog(npc_name, line)
 	
 	# Avance au prochain dialogue (boucle)
 	dialogue_index = (dialogue_index + 1) % dialogues.size()

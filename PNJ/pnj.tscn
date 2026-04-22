@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://rclml3fsdfc0"]
 
 [ext_resource type="Script" uid="uid://h5r2xpqr5ry1" path="res://PNJ/pnj.gd" id="1_b4g5s"]
-[ext_resource type="Texture2D" uid="uid://bkimtpalw7k2t" path="res://assets/test.png" id="2_7ovff"]
+[ext_resource type="Texture2D" uid="uid://cdr8kspfuv6l0" path="res://PNJ/test.png" id="2_b4g5s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cpxlu"]
 size = Vector2(64, 64)
@@ -13,7 +13,7 @@ radius = 20.0
 script = ExtResource("1_b4g5s")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=703648713]
-texture = ExtResource("2_7ovff")
+texture = ExtResource("2_b4g5s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1738816754]
 shape = SubResource("RectangleShape2D_cpxlu")
