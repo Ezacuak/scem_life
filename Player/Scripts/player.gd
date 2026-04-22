@@ -28,3 +28,6 @@ func _physics_process(delta: float) -> void:
 func set_anim():
 	anim_tree.set("parameters/Idle/blend_position", input_movement)
 	anim_tree.set("parameters/Move/blend_position", input_movement)
+
+func _ready() -> void:
+	add_to_group("player")
