@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duqmbsmm1l532"
-path="res://.godot/imported/Unarmed_Idle2_body.png-aaffe13aa570db6523770aa8ab817d7d.ctex"
+uid="uid://dnc3f7otxvlbn"
+path="res://.godot/imported/Unarmed_Walk2_body.png-20e70c90836dd39c62f9a0a88b75f893.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Unarmed_Idle2_body.png"
-dest_files=["res://.godot/imported/Unarmed_Idle2_body.png-aaffe13aa570db6523770aa8ab817d7d.ctex"]
+source_file="res://assets/Sprites/Unarmed_Walk2_body.png"
+dest_files=["res://.godot/imported/Unarmed_Walk2_body.png-20e70c90836dd39c62f9a0a88b75f893.ctex"]
 
 [params]
 

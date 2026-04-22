@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://cjfvqgj64ud7u"]
 
 [ext_resource type="PackedScene" uid="uid://bor0vo617i5dk" path="res://Player/Scenes/player.tscn" id="1_12axb"]
+[ext_resource type="PackedScene" uid="uid://rclml3fsdfc0" path="res://PNJ/pnj.tscn" id="2_cpxlu"]
+[ext_resource type="PackedScene" uid="uid://dvr81etcbha74" path="res://DialogBox/dialog_box.tscn" id="3_mb5l5"]
 
 [node name="level_1" type="Node2D" unique_id=464282838]
 
@@ -8,3 +10,7 @@
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1360576923]
 zoom = Vector2(3, 3)
+
+[node name="PNJ" parent="." unique_id=1743636508 instance=ExtResource("2_cpxlu")]
+
+[node name="DialogBox" parent="." unique_id=1078294648 instance=ExtResource("3_mb5l5")]

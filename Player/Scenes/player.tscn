@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://bor0vo617i5dk"]
 
 [ext_resource type="Script" uid="uid://c3hmkuxxwbu13" path="res://Player/Scripts/player.gd" id="1_52sos"]
-[ext_resource type="Texture2D" uid="uid://dnc3f7otxvlbn" path="res://Sprites/Unarmed_Walk2_body.png" id="1_rg7kn"]
-[ext_resource type="Texture2D" uid="uid://bgk8nc4tukxax" path="res://Sprites/Unarmed_Walk3_head.png" id="2_52sos"]
-[ext_resource type="Texture2D" uid="uid://duqmbsmm1l532" path="res://Sprites/Unarmed_Idle2_body.png" id="4_bw35f"]
-[ext_resource type="Texture2D" uid="uid://b7clir521oiyw" path="res://Sprites/Unarmed_Idle3_head.png" id="5_xwb2w"]
+[ext_resource type="Texture2D" uid="uid://dnc3f7otxvlbn" path="res://assets/Sprites/Unarmed_Walk2_body.png" id="1_rg7kn"]
+[ext_resource type="Texture2D" uid="uid://bgk8nc4tukxax" path="res://assets/Sprites/Unarmed_Walk3_head.png" id="2_52sos"]
+[ext_resource type="Texture2D" uid="uid://duqmbsmm1l532" path="res://assets/Sprites/Unarmed_Idle2_body.png" id="4_bw35f"]
+[ext_resource type="Texture2D" uid="uid://b7clir521oiyw" path="res://assets/Sprites/Unarmed_Idle3_head.png" id="5_xwb2w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_omv0o"]
 size = Vector2(7, 7)

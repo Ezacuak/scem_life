@@ -14,3 +14,6 @@ func _physics_process(delta: float) -> void:
 		velocity = Vector2.ZERO
 		
 	move_and_slide()
+	
+func _ready() -> void:
+	add_to_group("player")

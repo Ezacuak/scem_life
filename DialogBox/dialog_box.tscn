@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dvr81etcbha74"]
+
+[ext_resource type="Script" uid="uid://oyvwtmvgebr2" path="res://DialogBox/dialogBox.gd" id="1_jm3ox"]
+
+[sub_resource type="GDScript" id="GDScript_hr7li"]
+script/source = "extends CanvasLayer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="DialogBox" type="CanvasLayer" unique_id=1078294648]
+script = SubResource("GDScript_hr7li")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1681777960]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_jm3ox")
+
+[node name="SpeakerName" type="Label" parent="PanelContainer" unique_id=690468762]
+layout_mode = 2
+
+[node name="DialogText" type="Label" parent="PanelContainer" unique_id=1153594605]
+layout_mode = 2
