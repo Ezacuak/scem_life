@@ -152,7 +152,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_yq18l"]
 resource_name = "idle_up"
-length = 0.7
+length = 2.0
 loop_mode = 1
 step = 0.1
 tracks/0/type = "value"
@@ -162,7 +162,7 @@ tracks/0/path = NodePath("PlayerIdle/Sprite2DHeadIdle:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [36, 37, 38, 39]
@@ -174,7 +174,7 @@ tracks/1/path = NodePath("PlayerIdle/Sprite2DBodyIdle:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [36, 37, 38, 39]
@@ -378,7 +378,6 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 script = ExtResource("1_52sos")
 
 [node name="PlayerIdle" type="Node2D" parent="." unique_id=1789244866]
-visible = false
 
 [node name="Sprite2DBodyIdle" type="Sprite2D" parent="PlayerIdle" unique_id=109800118]
 texture = ExtResource("4_bw35f")
@@ -393,6 +392,7 @@ vframes = 4
 frame = 1
 
 [node name="PlayerMove" type="Node2D" parent="." unique_id=1934260173]
+visible = false
 
 [node name="Sprite2DBodyMove" type="Sprite2D" parent="PlayerMove" unique_id=1529570095]
 texture = ExtResource("1_rg7kn")
@@ -406,8 +406,8 @@ hframes = 6
 vframes = 4
 frame = 1
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1489516545]
-position = Vector2(-73, 19)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerMove" unique_id=1489516545]
+position = Vector2(0, 6)
 shape = SubResource("RectangleShape2D_omv0o")
 debug_color = Color(0.8821524, 0.33437037, 0.093174435, 0.41960785)
 
