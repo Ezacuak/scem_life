@@ -1,0 +1,96 @@
+[
+	{
+		"text" : "Bonjour, je n'ai pas reçu votre TP.",
+		"choices": [
+			{
+				"text": "On va vous l'envoyer.",
+				"requirements": [ ],
+				"impacts": [
+					{ 
+						"name": "infoMail",
+					 	"value": true
+					}
+				]
+			}
+		],
+		"requirements": [
+			{ 
+				"name": "mailEnvoye",
+			 	"value": false 
+			}
+		]
+	},
+	{
+		"text" : "Vous m'avez rendu une archive vide...",
+		"choices": [
+			{
+				"text": "Je reviens.",
+				"requirements": [ ],
+				"impacts": [
+					{ 
+						"name": "demandeCorrection",
+					 	"value": true
+					}
+				]
+			}
+		],
+		"requirements": [
+			{ 
+				"name": "mailEnvoye",
+			 	"value": true 
+			},
+			{ 
+				"name": "archiveComplete",
+			 	"value": false 
+			}
+		]
+	},
+	{
+		"text" : "Faites attention la prochaine fois...",
+		"choices": [
+			{
+				"text": "oui",
+				"requirements": [ ],
+				"impacts": []
+			}
+		],
+		"requirements": [
+			{ 
+				"name": "mailEnvoye",
+			 	"value": true 
+			},
+			{ 
+				"name": "archiveComplete",
+			 	"value": true
+			},
+			{ 
+				"name": "demandeCorrection",
+			 	"value": true
+			}
+		]
+	},
+	{
+		"text" : "C'est tout bon",
+		"choices": [
+			{
+				"text": "Parfait !",
+				"requirements": [ ],
+				"impacts": []
+			}
+		],
+		"requirements": [
+			{ 
+				"name": "mailEnvoye",
+			 	"value": true 
+			},
+			{ 
+				"name": "archiveComplete",
+			 	"value": true
+			},
+			{ 
+				"name": "demandeCorrection",
+			 	"value": false
+			}
+		]
+	}
+]

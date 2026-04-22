@@ -6,7 +6,7 @@ func _ready() -> void:
 	var choices = {
 		"start": true
 	}
-	var dm = DialogManager.new("test", choices)
+	var dm = DialogManager.new("lauRax", choices)
 	
 	print(dm.get_current_dialog())
 	print(dm.get_available_answers())
